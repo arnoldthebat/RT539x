@@ -23,7 +23,7 @@ RT28xx_DIR = $(shell pwd)
 endif
 
 #include $(RT28xx_DIR)/os/linux/config.mk
-include /development/2011_1007_RT5390_RT5392_Linux_STA_V2.5.0.3_DPO/os/linux/config.mk
+include /development/RT539x/os/linux/config.mk
 
 RTMP_SRC_DIR = $(RT28xx_DIR)/RT$(MODULE)
 
