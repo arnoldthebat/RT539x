@@ -22,7 +22,6 @@ ifneq ($(TARGET),THREADX)
 RT28xx_DIR = $(shell pwd)
 endif
 
-#fudge to lock to local dir
 #include $(RT28xx_DIR)/os/linux/config.mk
 include /development/RT539x/os/linux/config.mk
 
