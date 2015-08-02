@@ -22,7 +22,8 @@ ifneq ($(TARGET),THREADX)
 RT28xx_DIR = $(shell pwd)
 endif
 
-include $(RT28xx_DIR)/os/linux/config.mk
+#include $(RT28xx_DIR)/os/linux/config.mk
+include /development/2011_1007_RT5390_RT5392_Linux_STA_V2.5.0.3_DPO/os/linux/config.mk
 
 RTMP_SRC_DIR = $(RT28xx_DIR)/RT$(MODULE)
 
@@ -181,7 +182,8 @@ endif
 
 ifeq ($(PLATFORM),PC)
 # Linux 2.6
-LINUX_SRC = /lib/modules/$(shell uname -r)/build
+#LINUX_SRC = /lib/modules/$(shell uname -r)/build
+LINUX_SRC = /usr/src/linux-3.19.3
 # Linux 2.4 Change to your local setting
 #LINUX_SRC = /usr/src/linux-2.4
 LINUX_SRC_MODULE = /lib/modules/$(shell uname -r)/kernel/drivers/net/wireless/
